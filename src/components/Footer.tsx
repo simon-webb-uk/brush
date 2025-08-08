@@ -17,8 +17,7 @@ function Copyright() {
   return (
     <Typography variant="body2" sx={{ color: 'primary.contrastText', mt: 1 }}>
       {'Copyright © '}
-        Brush Limited.
-      &nbsp;
+      Brush Limited. &nbsp;
       {new Date().getFullYear()}
     </Typography>
   );
@@ -55,7 +54,7 @@ export default function Footer() {
           }}
         >
           <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-            <img style={{maxHeight: '90px'}} src='/footer-icon.png' />
+            <img style={{ maxHeight: '90px' }} src="/footer-icon.png" />
           </Box>
         </Box>
         <Box

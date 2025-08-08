@@ -15,7 +15,7 @@ export default function PracticesHero() {
   return (
     <Box
       id="hero"
-      sx={(theme) => ({
+      sx={theme => ({
         width: '100%',
         backgroundRepeat: 'no-repeat',
 
@@ -54,7 +54,7 @@ export default function PracticesHero() {
             <Typography
               component="span"
               variant="h1"
-              sx={(theme) => ({
+              sx={theme => ({
                 fontSize: 'inherit',
                 color: 'primary.main',
                 ...theme.applyStyles('dark', {
@@ -72,7 +72,10 @@ export default function PracticesHero() {
               width: { sm: '100%', md: '80%' },
             }}
           >
-          Join a collaborative network dedicated to making dental care more rewarding. Partner with Brush to connect with more patients and deliver exceptional care. Our Cheltenham pilot, starting September 2025, is your opportunity to shape the future of dentistry with us.
+            Join a collaborative network dedicated to making dental care more
+            rewarding. Partner with Brush to connect with more patients and
+            deliver exceptional care. Our Cheltenham pilot, starting September
+            2025, is your opportunity to shape the future of dentistry with us.
           </Typography>
           <Typography
             sx={{
@@ -80,13 +83,23 @@ export default function PracticesHero() {
               color: 'text.secondary',
               width: { sm: '100%', md: '80%' },
             }}
-          >
-          </Typography>
+          ></Typography>
           <List>
-            <ListItem>Unlock 5x more appointments through our real-time booking system</ListItem>
-            <ListItem>Work together with a network passionate about patient care</ListItem>
-            <ListItem>Try us risk-free: For the first 3 months, pay only per lead—£25 per emergency appointment, £40 per hygiene appointment, £80 per cosmetic appointment</ListItem>
-            <ListItem>After trial, subscribe for just £80/month plus per-lead fees (£25/emergency, £40/hygiene, £80/cosmetic)</ListItem>
+            <ListItem>
+              Unlock 5x more appointments through our real-time booking system
+            </ListItem>
+            <ListItem>
+              Work together with a network passionate about patient care
+            </ListItem>
+            <ListItem>
+              Try us risk-free: For the first 3 months, pay only per lead—£25
+              per emergency appointment, £40 per hygiene appointment, £80 per
+              cosmetic appointment
+            </ListItem>
+            <ListItem>
+              After trial, subscribe for just £80/month plus per-lead fees
+              (£25/emergency, £40/hygiene, £80/cosmetic)
+            </ListItem>
           </List>
         </Stack>
       </Container>

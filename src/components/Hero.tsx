@@ -39,7 +39,7 @@ export default function Hero() {
   return (
     <Box
       id="hero"
-      sx={(theme) => ({
+      sx={theme => ({
         width: '100%',
         backgroundRepeat: 'no-repeat',
 
@@ -78,7 +78,7 @@ export default function Hero() {
             <Typography
               component="span"
               variant="h1"
-              sx={(theme) => ({
+              sx={theme => ({
                 fontSize: 'inherit',
                 color: 'primary.main',
                 ...theme.applyStyles('dark', {
@@ -96,9 +96,9 @@ export default function Hero() {
               width: { sm: '100%', md: '80%' },
             }}
           >
-            Explore our cutting-edge dashboard, delivering high-quality solutions
-            tailored to your needs. Elevate your experience with top-tier features
-            and services.
+            Explore our cutting-edge dashboard, delivering high-quality
+            solutions tailored to your needs. Elevate your experience with
+            top-tier features and services.
           </Typography>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}

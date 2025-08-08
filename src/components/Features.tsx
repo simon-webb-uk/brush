@@ -98,7 +98,7 @@ export function MobileLayout({
       </Box>
       <Card variant="outlined">
         <Box
-          sx={(theme) => ({
+          sx={theme => ({
             mb: 2,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -157,9 +157,9 @@ export default function Features() {
           variant="body1"
           sx={{ color: 'text.secondary', mb: { xs: 2, sm: 4 } }}
         >
-          Provide a brief overview of the key features of the product. For example,
-          you could list the number of features, their types or benefits, and
-          add-ons.
+          Provide a brief overview of the key features of the product. For
+          example, you could list the number of features, their types or
+          benefits, and add-ons.
         </Typography>
       </Box>
       <Box
@@ -184,12 +184,13 @@ export default function Features() {
                 component={Button}
                 onClick={() => handleItemClick(index)}
                 sx={[
-                  (theme) => ({
+                  theme => ({
                     p: 2,
                     height: '100%',
                     width: '100%',
                     '&:hover': {
-                      backgroundColor: (theme.vars || theme).palette.action.hover,
+                      backgroundColor: (theme.vars || theme).palette.action
+                        .hover,
                     },
                   }),
                   selectedItemIndex === index && {
@@ -245,7 +246,7 @@ export default function Features() {
             }}
           >
             <Box
-              sx={(theme) => ({
+              sx={theme => ({
                 m: 'auto',
                 width: 420,
                 height: 500,

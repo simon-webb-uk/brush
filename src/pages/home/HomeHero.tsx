@@ -14,7 +14,7 @@ export default function HomeHero() {
   return (
     <Box
       id="hero"
-      sx={(theme) => ({
+      sx={theme => ({
         width: '100%',
         backgroundRepeat: 'no-repeat',
 
@@ -53,7 +53,7 @@ export default function HomeHero() {
             <Typography
               component="span"
               variant="h1"
-              sx={(theme) => ({
+              sx={theme => ({
                 fontSize: 'inherit',
                 color: 'primary.main',
                 ...theme.applyStyles('dark', {
@@ -71,16 +71,16 @@ export default function HomeHero() {
               width: { sm: '100%', md: '80%' },
             }}
           >
-            Book your dental appointment in seconds with Brush. 
+            Book your dental appointment in seconds with Brush.
           </Typography>
-                    <Typography
+          <Typography
             sx={{
               textAlign: 'center',
               color: 'text.secondary',
               width: { sm: '100%', md: '80%' },
             }}
           >
-            No waitlists. No hassle - just quick, fair access to care. 
+            No waitlists. No hassle - just quick, fair access to care.
           </Typography>
           <Stack
             direction={{ xs: 'column', sm: 'column' }}
@@ -93,7 +93,7 @@ export default function HomeHero() {
               color="primary"
               size="small"
               sx={{ minWidth: 'fit-content' }}
-              href='http://trybrush.redfiredigital.uk'
+              href="http://trybrush.redfiredigital.uk"
             >
               Book an Appointment
             </Button>

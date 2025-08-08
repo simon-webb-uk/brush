@@ -14,7 +14,7 @@ export default function FaqHero() {
   return (
     <Box
       id="hero"
-      sx={(theme) => ({
+      sx={theme => ({
         width: '100%',
         backgroundRepeat: 'no-repeat',
 
@@ -53,16 +53,14 @@ export default function FaqHero() {
             <Typography
               component="span"
               variant="h1"
-              sx={(theme) => ({
+              sx={theme => ({
                 fontSize: 'inherit',
                 color: 'primary.main',
                 ...theme.applyStyles('dark', {
                   color: 'primary.light',
                 }),
               })}
-            >
-              
-            </Typography>
+            ></Typography>
           </Typography>
           <Typography
             sx={{

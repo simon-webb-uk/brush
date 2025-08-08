@@ -14,7 +14,7 @@ export default function AboutHero() {
   return (
     <Box
       id="hero"
-      sx={(theme) => ({
+      sx={theme => ({
         width: '100%',
         backgroundRepeat: 'no-repeat',
 
@@ -53,7 +53,7 @@ export default function AboutHero() {
             <Typography
               component="span"
               variant="h1"
-              sx={(theme) => ({
+              sx={theme => ({
                 fontSize: 'inherit',
                 color: 'primary.main',
                 ...theme.applyStyles('dark', {

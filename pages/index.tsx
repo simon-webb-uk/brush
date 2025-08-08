@@ -8,7 +8,5 @@ import Copyright from '../src/Copyright';
 import HomePage from '../src/pages/home';
 
 export default function Home() {
-  return (
-    <HomePage />
-  );
+  return <HomePage />;
 }

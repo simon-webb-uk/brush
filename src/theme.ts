@@ -24,7 +24,6 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: siteFont.style.fontFamily,
-
   },
 });
 

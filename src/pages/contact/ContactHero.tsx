@@ -14,7 +14,7 @@ export default function ContactHero() {
   return (
     <Box
       id="hero"
-      sx={(theme) => ({
+      sx={theme => ({
         width: '100%',
         backgroundRepeat: 'no-repeat',
 
@@ -53,7 +53,7 @@ export default function ContactHero() {
             <Typography
               component="span"
               variant="h1"
-              sx={(theme) => ({
+              sx={theme => ({
                 fontSize: 'inherit',
                 color: 'primary.main',
                 ...theme.applyStyles('dark', {
@@ -73,16 +73,15 @@ export default function ContactHero() {
           >
             Have questions? Reach out to our team.
           </Typography>
-                    <Typography
+          <Typography
             sx={{
               textAlign: 'center',
               color: 'text.secondary',
               width: { sm: '100%', md: '80%' },
             }}
           >
-Email: support@trybrush.com
-Phone: 01242 123 456
-Address: 123 High Street, Cheltenham, GL50 1AA
+            Email: support@trybrush.com Phone: 01242 123 456 Address: 123 High
+            Street, Cheltenham, GL50 1AA
           </Typography>
         </Stack>
       </Container>

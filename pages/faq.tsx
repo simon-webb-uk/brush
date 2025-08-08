@@ -1,7 +1,5 @@
-import FaqPage from "../src/pages/faq";
+import FaqPage from '../src/pages/faq';
 
 export default function About() {
-  return (
-    <FaqPage />
-  );
+  return <FaqPage />;
 }

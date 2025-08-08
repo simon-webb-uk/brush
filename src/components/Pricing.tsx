@@ -86,8 +86,8 @@ export default function Pricing() {
           Pricing
         </Typography>
         <Typography variant="body1" sx={{ color: 'text.secondary' }}>
-          Quickly build an effective pricing table for your potential customers with
-          this layout. <br />
+          Quickly build an effective pricing table for your potential customers
+          with this layout. <br />
           It&apos;s built with default Material UI components with little
           customization.
         </Typography>
@@ -97,7 +97,7 @@ export default function Pricing() {
         spacing={3}
         sx={{ alignItems: 'center', justifyContent: 'center', width: '100%' }}
       >
-        {tiers.map((tier) => (
+        {tiers.map(tier => (
           <Grid
             size={{ xs: 12, sm: tier.title === 'Enterprise' ? 12 : 6, md: 4 }}
             key={tier.title}
@@ -111,7 +111,7 @@ export default function Pricing() {
                   gap: 4,
                 },
                 tier.title === 'Professional' &&
-                  ((theme) => ({
+                  (theme => ({
                     border: 'none',
                     background:
                       'radial-gradient(circle at 50% 0%, hsl(220, 20%, 35%), hsl(220, 30%, 6%))',
@@ -165,10 +165,15 @@ export default function Pricing() {
                   </Typography>
                 </Box>
                 <Divider sx={{ my: 2, opacity: 0.8, borderColor: 'divider' }} />
-                {tier.description.map((line) => (
+                {tier.description.map(line => (
                   <Box
                     key={line}
-                    sx={{ py: 1, display: 'flex', gap: 1.5, alignItems: 'center' }}
+                    sx={{
+                      py: 1,
+                      display: 'flex',
+                      gap: 1.5,
+                      alignItems: 'center',
+                    }}
                   >
                     <CheckCircleRoundedIcon
                       sx={[

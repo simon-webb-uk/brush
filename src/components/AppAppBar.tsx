@@ -47,27 +47,52 @@ export default function AppAppBar() {
     >
       <Container maxWidth="lg">
         <StyledToolbar variant="dense" disableGutters>
-          <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
+          <Box
+            sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}
+          >
             <Sitemark />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant="text" color="info" size="small"
-                href='http://trybrush.redfiredigital.uk'>
+              <Button
+                variant="text"
+                color="info"
+                size="small"
+                href="http://trybrush.redfiredigital.uk"
+              >
                 Find Dentist
               </Button>
-              <Button variant="text" color="info" size="small"
-                href='/practices'>
+              <Button
+                variant="text"
+                color="info"
+                size="small"
+                href="/practices"
+              >
                 For Practices
               </Button>
-              <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}
-                href='/about'>
+              <Button
+                variant="text"
+                color="info"
+                size="small"
+                sx={{ minWidth: 0 }}
+                href="/about"
+              >
                 About Us
               </Button>
-              <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}
-                href='/contact'>
+              <Button
+                variant="text"
+                color="info"
+                size="small"
+                sx={{ minWidth: 0 }}
+                href="/contact"
+              >
                 Contact
               </Button>
-              <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}
-                href='/faq'>
+              <Button
+                variant="text"
+                color="info"
+                size="small"
+                sx={{ minWidth: 0 }}
+                href="/faq"
+              >
                 FAQs
               </Button>
             </Box>
@@ -79,12 +104,20 @@ export default function AppAppBar() {
               alignItems: 'center',
             }}
           >
-            <Button color="primary" variant="text" size="small" 
-              href='http://trybrush.redfiredigital.uk'>
+            <Button
+              color="primary"
+              variant="text"
+              size="small"
+              href="http://trybrush.redfiredigital.uk"
+            >
               Book Now
             </Button>
-            <Button color="primary" variant="contained" size="small"
-              href='http://trybrush.redfiredigital.uk'>
+            <Button
+              color="primary"
+              variant="contained"
+              size="small"
+              href="http://trybrush.redfiredigital.uk"
+            >
               Join Now
             </Button>
           </Box>

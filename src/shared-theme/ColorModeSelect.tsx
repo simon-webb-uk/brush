@@ -11,7 +11,7 @@ export default function ColorModeSelect(props: SelectProps) {
   return (
     <Select
       value={mode}
-      onChange={(event) =>
+      onChange={event =>
         setMode(event.target.value as 'system' | 'light' | 'dark')
       }
       SelectDisplayProps={{
