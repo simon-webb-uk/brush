@@ -9,6 +9,8 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import visuallyHidden from '@mui/utils/visuallyHidden';
 import { styled } from '@mui/material/styles';
+import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function FaqHero() {
   return (
@@ -62,16 +64,37 @@ export default function FaqHero() {
               })}
             ></Typography>
           </Typography>
-          <Typography
-            sx={{
-              textAlign: 'center',
-              color: 'text.secondary',
-              width: { sm: '100%', md: '80%' },
-            }}
-          >
-            FAQ copy
-          </Typography>
         </Stack>
+        <div>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1-content"
+              id="panel1-header"
+            >
+              <Typography>Accordion 1</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                This is the content inside Accordion 1. You can place anything
+                here — text, components, forms, etc.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2-content"
+              id="panel2-header"
+            >
+              <Typography>Accordion 2</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>This is the second accordion's content.</Typography>
+            </AccordionDetails>
+          </Accordion>
+        </div>
       </Container>
     </Box>
   );

@@ -1,14 +1,7 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import InputLabel from '@mui/material/InputLabel';
-import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import visuallyHidden from '@mui/utils/visuallyHidden';
-import { styled } from '@mui/material/styles';
 
 export default function AboutHero() {
   return (
@@ -17,7 +10,6 @@ export default function AboutHero() {
       sx={theme => ({
         width: '100%',
         backgroundRepeat: 'no-repeat',
-
         backgroundImage:
           'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 90%), transparent)',
         ...theme.applyStyles('dark', {
@@ -71,7 +63,10 @@ export default function AboutHero() {
               width: { sm: '100%', md: '80%' },
             }}
           >
-            about us copy
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </Typography>
         </Stack>
       </Container>
