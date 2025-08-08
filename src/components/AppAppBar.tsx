@@ -12,6 +12,7 @@ import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import Sitemark from './SitemarkIcon';
+import { Link } from '../Link';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: 'flex',
@@ -147,20 +148,41 @@ export default function AppAppBar() {
                   </IconButton>
                 </Box>
 
-                <MenuItem>Features</MenuItem>
-                <MenuItem>Testimonials</MenuItem>
-                <MenuItem>Highlights</MenuItem>
-                <MenuItem>Pricing</MenuItem>
-                <MenuItem>FAQ</MenuItem>
-                <MenuItem>Blog</MenuItem>
+                <MenuItem>
+                  <Link href="http://trybrush.redfiredigital.uk">
+                    Find Dentist
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link href="/practices">For Practices</Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link href="/about">About Us</Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link href="/contact">Contact</Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link href="/faq">FAQ</Link>
+                </MenuItem>
                 <Divider sx={{ my: 3 }} />
                 <MenuItem>
-                  <Button color="primary" variant="contained" fullWidth>
+                  <Button
+                    color="primary"
+                    variant="contained"
+                    fullWidth
+                    href="http://trybrush.redfiredigital.uk"
+                  >
                     Book Now
                   </Button>
                 </MenuItem>
                 <MenuItem>
-                  <Button color="primary" variant="outlined" fullWidth>
+                  <Button
+                    color="primary"
+                    variant="outlined"
+                    fullWidth
+                    href="http://trybrush.redfiredigital.uk"
+                  >
                     Join Now
                   </Button>
                 </MenuItem>
