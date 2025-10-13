@@ -45,12 +45,12 @@ export default function PracticesHero() {
             variant="h1"
             sx={{
               display: 'flex',
-              flexDirection: { xs: 'column', sm: 'row' },
+              flexDirection: { xs: 'column', sm: 'column' },
               alignItems: 'center',
               fontSize: 'clamp(3rem, 10vw, 3.5rem)',
             }}
           >
-            FOR&nbsp;
+            MAXIMISE CAPACITY,
             <Typography
               component="span"
               variant="h1"
@@ -62,7 +62,7 @@ export default function PracticesHero() {
                 }),
               })}
             >
-              PRACTICES
+              MINIMISE HASSLE
             </Typography>
           </Typography>
           <Typography
@@ -72,10 +72,11 @@ export default function PracticesHero() {
               width: { sm: '100%', md: '80%' },
             }}
           >
-            Join a collaborative network dedicated to making dental care more
-            rewarding. Partner with Brush to connect with more patients and
-            deliver exceptional care. Our Cheltenham pilot, starting September
-            2025, is your opportunity to shape the future of dentistry with us.
+            NHS funding cuts and last minute cancellations mean lost income and
+            empty slots. Brush reduces administrative burdens by streamlining
+            appointment management and helping independent network practices
+            maximise capacity. Join our growing network, starting with
+            Gloucestershire and Surrey.
           </Typography>
           <Typography
             sx={{
@@ -86,21 +87,31 @@ export default function PracticesHero() {
           ></Typography>
           <List>
             <ListItem>
-              Unlock 5x more appointments through our real-time booking system
+              Real time rebooking: Fill cancellations in seconds, boosting
+              revenue.
+            </ListItem>
+            <ListItem>Marketplace tools: Compare prices</ListItem>
+            <ListItem>
+              AI Insights: Optimise schedules and early diagnosis for conditions
+              like gum disease.
             </ListItem>
             <ListItem>
-              Work together with a network passionate about patient care
-            </ListItem>
-            <ListItem>
-              Try us risk-free: For the first 3 months, pay only per lead—£25
-              per emergency appointment, £40 per hygiene appointment, £80 per
-              cosmetic appointment
-            </ListItem>
-            <ListItem>
-              After trial, subscribe for just £80/month plus per-lead fees
-              (£25/emergency, £40/hygiene, £80/cosmetic)
+              Subscription of £79/month per network + £39/fee for each new
+              confirmed booking.
             </ListItem>
           </List>
+          <Typography
+            sx={{
+              fontWeight: 'bold',
+              fontSize: '1rem',
+              textAlign: 'center',
+              color: 'text.secondary',
+              width: { sm: '100%', md: '80%' },
+            }}
+          >
+            Join our network and help us transform dental care. Email{' '}
+            <a href="mailto:network@trybrush.com">network@trybrush.com</a>
+          </Typography>
         </Stack>
       </Container>
     </Box>

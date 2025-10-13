@@ -9,8 +9,9 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import visuallyHidden from '@mui/utils/visuallyHidden';
 import { styled } from '@mui/material/styles';
+import { List, ListItem } from '@mui/material';
 
-export default function HomeHero() {
+export default function CookiesHero() {
   return (
     <Box
       id="hero"
@@ -44,25 +45,12 @@ export default function HomeHero() {
             variant="h1"
             sx={{
               display: 'flex',
-              flexDirection: { xs: 'column', sm: 'row' },
+              flexDirection: { xs: 'column', sm: 'column' },
               alignItems: 'center',
               fontSize: 'clamp(3rem, 10vw, 3.5rem)',
             }}
           >
-            Find a Dentist. &nbsp;
-            <Typography
-              component="span"
-              variant="h1"
-              sx={theme => ({
-                fontSize: 'inherit',
-                color: 'primary.main',
-                ...theme.applyStyles('dark', {
-                  color: 'primary.light',
-                }),
-              })}
-            >
-              Fast.
-            </Typography>
+            COOKIES
           </Typography>
           <Typography
             sx={{
@@ -71,32 +59,15 @@ export default function HomeHero() {
               width: { sm: '100%', md: '80%' },
             }}
           >
-            Making it simple for families to access dental care with a national
-            booking system for Private and NHS patients
+            ...
           </Typography>
-          <Stack
-            direction={{ xs: 'column', sm: 'column' }}
-            spacing={1}
-            useFlexGap
-            sx={{ pt: 2, width: { xs: '100%', sm: '350px' } }}
-          >
-            <Button
-              variant="contained"
-              color="primary"
-              size="small"
-              sx={{ minWidth: 'fit-content' }}
-              href="http://trybrush.redfiredigital.uk"
-            >
-              Book in Seconds – No Calls Needed
-            </Button>
-          </Stack>
           <Typography
-            variant="caption"
-            color="text.secondary"
-            sx={{ textAlign: 'center' }}
-          >
-            Endorsed by Peter and Emily Andre, champions of family health.
-          </Typography>
+            sx={{
+              textAlign: 'center',
+              color: 'text.secondary',
+              width: { sm: '100%', md: '80%' },
+            }}
+          ></Typography>
         </Stack>
       </Container>
     </Box>

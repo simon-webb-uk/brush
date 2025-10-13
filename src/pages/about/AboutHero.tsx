@@ -58,15 +58,49 @@ export default function AboutHero() {
           </Typography>
           <Typography
             sx={{
+              fontWeight: 'bold',
               textAlign: 'center',
               color: 'text.secondary',
               width: { sm: '100%', md: '80%' },
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Brush was born from a frustrating yet relatable experience. When
+            nine-year-old Brontë, the niece of one of our founders, suffered a
+            toothache during a visit to Sussex, her aunt and uncle struggled to
+            find a dentist with an available appointment. Hours of phone calls
+            to local practices yielded no results, until a cancellation at a
+            surgery further afield allowed Brontë to be seen and smile again.
+            This ordeal highlighted a gap in the UK’s dental care system.
+            Inspired by this challenge, Brush was created to make dental care
+            quick, fair, and accessible for everyone.
+          </Typography>
+          <h3>Mission</h3>
+          <Typography
+            sx={{
+              textAlign: 'center',
+              color: 'text.secondary',
+              width: { sm: '100%', md: '80%' },
+            }}
+          >
+            At Brush, we’re on a mission to simplify dental care access for
+            families across the UK. We aim to eliminate the stress of endless
+            phone calls and long waits by building a fully automated, realtime
+            booking platform that connects patients with available dental
+            appointments instantly.
+          </Typography>
+          <h3>Vision</h3>
+          <Typography
+            sx={{
+              textAlign: 'center',
+              color: 'text.secondary',
+              width: { sm: '100%', md: '80%' },
+            }}
+          >
+            We envision a future where dental care is seamless, stress free, and
+            equitable. Brush will be the leading national platform for dental
+            appointment booking, empowering patients to find care when they need
+            it and supporting dental practices by filling last minute
+            cancellations and optimising schedules.
           </Typography>
         </Stack>
       </Container>

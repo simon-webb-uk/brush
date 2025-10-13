@@ -93,6 +93,15 @@ export default function Footer() {
           <Link color="primary.contrastText" variant="body2" href="/contact">
             Contact
           </Link>
+          <Link color="primary.contrastText" variant="body2" href="/privacy">
+            Privacy
+          </Link>
+          <Link color="primary.contrastText" variant="body2" href="/cookies">
+            Cookies
+          </Link>
+          <Link color="primary.contrastText" variant="body2" href="/terms">
+            T &amp; Cs
+          </Link>
         </Box>
       </Box>
       <Box
