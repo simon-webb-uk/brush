@@ -38,18 +38,29 @@ export default function AppAppBar() {
 
   return (
     <AppBar
+      id="app-bar"
       position="fixed"
       enableColorOnDark
       sx={{
-        boxShadow: 0,
+        boxShadow: 'none',
         bgcolor: 'transparent',
         backgroundImage: 'none',
       }}
     >
-      <Container maxWidth="lg">
-        <StyledToolbar variant="dense" disableGutters>
+      <Container id="toolbar-container">
+        <StyledToolbar
+          id="styled-toolbar"
+          sx={{ boxShadow: 'none', border: 'solid 0px #ff00ff' }}
+          variant="dense"
+          disableGutters
+        >
           <Box
-            sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}
+            sx={{
+              flexGrow: 1,
+              display: 'flex',
+              alignItems: 'center',
+              px: 0,
+            }}
           >
             <Sitemark />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>

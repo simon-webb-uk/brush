@@ -13,7 +13,6 @@ export default function HomePage(props: { disableCustomTheme?: boolean }) {
       <AppAppBar />
       <HomeHero />
       <div>
-        <Divider />
         <Footer />
       </div>
     </AppTheme>

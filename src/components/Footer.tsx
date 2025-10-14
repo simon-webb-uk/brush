@@ -10,10 +10,8 @@ import TwitterIcon from '@mui/icons-material/X';
 
 function Copyright() {
   return (
-    <Typography variant="body2" sx={{ color: 'primary.contrastText', mt: 1 }}>
-      {'Copyright © '}
-      Brush Limited. &nbsp;
-      {new Date().getFullYear()}
+    <Typography sx={{ color: 'primary.contrastText', mt: 1 }}>
+      {'Copyright © Brush Limited. 2025'}
     </Typography>
   );
 }
@@ -21,15 +19,18 @@ function Copyright() {
 export default function Footer() {
   return (
     <Container
+      id="footer-container"
       sx={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         gap: { xs: 4, sm: 8 },
-        py: { xs: 8, sm: 10 },
+        py: { xs: 8, sm: 6 },
+        px: { xs: 8, sm: 4 },
         textAlign: { sm: 'center', md: 'left' },
         color: 'primary.light',
         backgroundColor: 'primary.main',
+        width: '100%',
       }}
     >
       <Box
@@ -54,7 +55,7 @@ export default function Footer() {
         </Box>
         <Box
           sx={{
-            display: { xs: 'none', sm: 'flex' },
+            display: { xs: 'flex', sm: 'flex' },
             flexDirection: 'column',
             gap: 1,
           }}
@@ -68,12 +69,15 @@ export default function Footer() {
         </Box>
         <Box
           sx={{
-            display: { xs: 'none', sm: 'flex' },
+            display: { xs: 'flex', sm: 'flex' },
             flexDirection: 'column',
             gap: 1,
           }}
         >
-          <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
+          <Typography
+            variant="body2"
+            sx={{ pt: { xs: 4, sm: 0 }, fontWeight: 'medium' }}
+          >
             Company
           </Typography>
           <Link color="primary.contrastText" variant="body2" href="/about">
@@ -82,12 +86,16 @@ export default function Footer() {
         </Box>
         <Box
           sx={{
-            display: { xs: 'none', sm: 'flex' },
+            display: { xs: 'flex', sm: 'flex' },
             flexDirection: 'column',
             gap: 1,
+            pr: { xs: 8, sm: 2 },
           }}
         >
-          <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
+          <Typography
+            variant="body2"
+            sx={{ pt: { xs: 4, sm: 0 }, fontWeight: 'medium' }}
+          >
             Legal
           </Typography>
           <Link color="primary.contrastText" variant="body2" href="/contact">
@@ -108,24 +116,13 @@ export default function Footer() {
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
-          pt: { xs: 4, sm: 8 },
+          pt: { xs: 2, sm: 2 },
           width: '100%',
           borderTop: '1px solid',
           borderColor: 'divider',
         }}
       >
-        <div>
-          {/* <Link color="text.secondary" variant="body2" href="#">
-            Privacy Policy
-          </Link>
-          <Typography sx={{ display: 'inline', mx: 0.5, opacity: 0.5 }}>
-            &nbsp;•&nbsp;
-          </Typography>
-          <Link color="text.secondary" variant="body2" href="#">
-            Terms of Service
-          </Link> */}
-          <Copyright />
-        </div>
+        <Copyright />
         <Stack
           direction="row"
           spacing={1}
