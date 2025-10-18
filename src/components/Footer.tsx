@@ -8,17 +8,11 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
 
-function Copyright() {
-  return (
-    <Typography sx={{ color: 'primary.contrastText', mt: 1 }}>
-      {'Copyright © Brush Limited. 2025'}
-    </Typography>
-  );
-}
-
 export default function Footer() {
   return (
     <Container
+      disableGutters
+      maxWidth={false}
       id="footer-container"
       sx={{
         display: 'flex',
@@ -29,8 +23,9 @@ export default function Footer() {
         px: { xs: 8, sm: 4 },
         textAlign: { sm: 'center', md: 'left' },
         color: 'primary.light',
-        backgroundColor: 'primary.main',
+        backgroundColor: '#333',
         width: '100%',
+        maxWidth: '2000px',
       }}
     >
       <Box
@@ -38,6 +33,7 @@ export default function Footer() {
           display: 'flex',
           flexDirection: { xs: 'column', sm: 'row' },
           width: '100%',
+          maxWidth: '2000px',
           justifyContent: 'space-between',
         }}
       >
@@ -49,9 +45,7 @@ export default function Footer() {
             minWidth: { xs: '100%', sm: '60%' },
           }}
         >
-          <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-            <img style={{ maxHeight: '90px' }} src="/footer-icon.png" />
-          </Box>
+          <Box sx={{ width: { xs: '100%', sm: '60%' } }}>TryBrush © 2025</Box>
         </Box>
         <Box
           sx={{
@@ -111,52 +105,6 @@ export default function Footer() {
             T &amp; Cs
           </Link>
         </Box>
-      </Box>
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          pt: { xs: 2, sm: 2 },
-          width: '100%',
-          borderTop: '1px solid',
-          borderColor: 'divider',
-        }}
-      >
-        <Copyright />
-        <Stack
-          direction="row"
-          spacing={1}
-          useFlexGap
-          sx={{ justifyContent: 'left', color: 'text.secondary' }}
-        >
-          <IconButton
-            color="inherit"
-            size="small"
-            href="https://github.com/mui"
-            aria-label="GitHub"
-            sx={{ alignSelf: 'center' }}
-          >
-            <GitHubIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
-            size="small"
-            href="https://x.com/MaterialUI"
-            aria-label="X"
-            sx={{ alignSelf: 'center' }}
-          >
-            <TwitterIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
-            size="small"
-            href="https://www.linkedin.com/company/mui/"
-            aria-label="LinkedIn"
-            sx={{ alignSelf: 'center' }}
-          >
-            <LinkedInIcon />
-          </IconButton>
-        </Stack>
       </Box>
     </Container>
   );

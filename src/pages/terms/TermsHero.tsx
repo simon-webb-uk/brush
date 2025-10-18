@@ -17,14 +17,6 @@ export default function TermsHero() {
       id="hero"
       sx={theme => ({
         width: '100%',
-        backgroundRepeat: 'no-repeat',
-
-        backgroundImage:
-          'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 90%), transparent)',
-        ...theme.applyStyles('dark', {
-          backgroundImage:
-            'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)',
-        }),
       })}
     >
       <Container
@@ -47,7 +39,8 @@ export default function TermsHero() {
               display: 'flex',
               flexDirection: { xs: 'column', sm: 'row' },
               alignItems: 'center',
-              fontSize: 'clamp(3rem, 10vw, 3.5rem)',
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+              fontSize: '2rem',
             }}
           >
             Brush Terms of Use

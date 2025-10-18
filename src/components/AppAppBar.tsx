@@ -13,19 +13,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import Sitemark from './SitemarkIcon';
 import { Link } from '../Link';
+import { ButtonOverrideStyle } from '../shared-theme/overrides';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
   flexShrink: 0,
-  backdropFilter: 'blur(24px)',
-  border: '1px solid',
-  borderColor: (theme.vars || theme).palette.divider,
-  backgroundColor: theme.vars
-    ? `rgba(${theme.vars.palette.background.defaultChannel} / 0.4)`
-    : alpha(theme.palette.background.default, 0.4),
-  boxShadow: (theme.vars || theme).shadows[1],
+  border: 'none',
+  boxShadow: 'none',
   padding: '8px 12px',
 }));
 
@@ -39,31 +35,31 @@ export default function AppAppBar() {
   return (
     <AppBar
       id="app-bar"
-      position="fixed"
+      position="static"
       enableColorOnDark
       sx={{
         boxShadow: 'none',
-        bgcolor: 'transparent',
+        bgcolor: 'white',
         backgroundImage: 'none',
       }}
     >
       <Container id="toolbar-container">
-        <StyledToolbar
-          id="styled-toolbar"
-          sx={{ boxShadow: 'none', border: 'solid 0px #ff00ff' }}
-          variant="dense"
-          disableGutters
-        >
+        <StyledToolbar id="styled-toolbar" variant="dense" disableGutters>
           <Box
             sx={{
               flexGrow: 1,
               display: 'flex',
               alignItems: 'center',
-              px: 0,
+              justifyContent: 'space-between',
+              pr: 3,
             }}
           >
             <Sitemark />
-            <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+            <Box
+              sx={{
+                display: { xs: 'none', md: 'flex' },
+              }}
+            >
               <Button
                 variant="text"
                 color="info"
@@ -117,18 +113,11 @@ export default function AppAppBar() {
             }}
           >
             <Button
-              color="primary"
-              variant="text"
-              size="small"
+              variant="outlined"
+              color="info"
+              size="medium"
               href="http://trybrush.redfiredigital.uk"
-            >
-              Book Now
-            </Button>
-            <Button
-              color="primary"
-              variant="contained"
-              size="small"
-              href="http://trybrush.redfiredigital.uk"
+              sx={ButtonOverrideStyle}
             >
               Join Now
             </Button>
@@ -179,17 +168,8 @@ export default function AppAppBar() {
                 <Divider sx={{ my: 3 }} />
                 <MenuItem>
                   <Button
-                    color="primary"
-                    variant="contained"
-                    fullWidth
-                    href="http://trybrush.redfiredigital.uk"
-                  >
-                    Book Now
-                  </Button>
-                </MenuItem>
-                <MenuItem>
-                  <Button
-                    color="primary"
+                    size="small"
+                    color="secondary"
                     variant="outlined"
                     fullWidth
                     href="http://trybrush.redfiredigital.uk"

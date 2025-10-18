@@ -9,6 +9,10 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import visuallyHidden from '@mui/utils/visuallyHidden';
 import { styled } from '@mui/material/styles';
+import {
+  ButtonOverrideStyle,
+  ContentButtonOverrideStyle,
+} from '../../shared-theme/overrides';
 
 export default function HomeHero() {
   return (
@@ -16,14 +20,6 @@ export default function HomeHero() {
       id="hero"
       sx={theme => ({
         width: '100%',
-        backgroundRepeat: 'no-repeat',
-
-        backgroundImage:
-          'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 90%), transparent)',
-        ...theme.applyStyles('dark', {
-          backgroundImage:
-            'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)',
-        }),
       })}
     >
       <Container
@@ -39,6 +35,7 @@ export default function HomeHero() {
           spacing={2}
           useFlexGap
           sx={{ alignItems: 'center', width: { xs: '100%', sm: '70%' } }}
+          fontSize={'1.1rem'}
         >
           <Typography
             variant="h1"
@@ -46,29 +43,18 @@ export default function HomeHero() {
               display: 'flex',
               flexDirection: { xs: 'column', sm: 'row' },
               alignItems: 'center',
-              fontSize: 'clamp(3rem, 10vw, 3.5rem)',
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+              fontSize: '2rem',
             }}
           >
-            Find a Dentist. &nbsp;
-            <Typography
-              component="span"
-              variant="h1"
-              sx={theme => ({
-                fontSize: 'inherit',
-                color: 'primary.main',
-                ...theme.applyStyles('dark', {
-                  color: 'primary.light',
-                }),
-              })}
-            >
-              Fast.
-            </Typography>
+            Find a dentist. Fast.
           </Typography>
           <Typography
             sx={{
               textAlign: 'center',
               color: 'text.secondary',
               width: { sm: '100%', md: '80%' },
+              fontWeight: 500,
             }}
           >
             Making it simple for families to access dental care with a national
@@ -81,20 +67,16 @@ export default function HomeHero() {
             sx={{ pt: 2, width: { xs: '100%', sm: '350px' } }}
           >
             <Button
-              variant="contained"
-              color="primary"
-              size="small"
-              sx={{ minWidth: 'fit-content' }}
+              variant="outlined"
+              color="info"
+              size="medium"
               href="http://trybrush.redfiredigital.uk"
+              sx={ContentButtonOverrideStyle}
             >
               Book in Seconds – No Calls Needed
             </Button>
           </Stack>
-          <Typography
-            variant="caption"
-            color="text.secondary"
-            sx={{ textAlign: 'center' }}
-          >
+          <Typography color="text.secondary" sx={{ textAlign: 'center' }}>
             Endorsed by Peter and Emily Andre, champions of family health.
           </Typography>
         </Stack>

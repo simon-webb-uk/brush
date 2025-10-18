@@ -18,14 +18,6 @@ export default function FaqHero() {
       id="hero"
       sx={theme => ({
         width: '100%',
-        backgroundRepeat: 'no-repeat',
-
-        backgroundImage:
-          'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 90%), transparent)',
-        ...theme.applyStyles('dark', {
-          backgroundImage:
-            'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)',
-        }),
       })}
     >
       <Container
@@ -48,7 +40,8 @@ export default function FaqHero() {
               display: 'flex',
               flexDirection: { xs: 'column', sm: 'row' },
               alignItems: 'center',
-              fontSize: 'clamp(3rem, 10vw, 3.5rem)',
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+              fontSize: '2rem',
             }}
           >
             FA
@@ -73,7 +66,7 @@ export default function FaqHero() {
           <h2>General Questions</h2>
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
               aria-controls="panel1-content"
               id="panel1-header"
             >
@@ -92,7 +85,7 @@ export default function FaqHero() {
 
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
               aria-controls="panel2-content"
               id="panel2-header"
             >
@@ -114,7 +107,7 @@ export default function FaqHero() {
           <h2>Patient FAQs</h2>
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
               aria-controls="panel1-content"
               id="panel1-header"
               sx={{ width: '100%' }}
@@ -130,7 +123,7 @@ export default function FaqHero() {
           </Accordion>
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
               aria-controls="panel2-content"
               id="panel2-header"
             >
@@ -146,7 +139,7 @@ export default function FaqHero() {
           </Accordion>
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
               aria-controls="panel2-content"
               id="panel2-header"
             >
@@ -161,7 +154,7 @@ export default function FaqHero() {
           </Accordion>
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
               aria-controls="panel2-content"
               id="panel2-header"
             >
@@ -182,7 +175,7 @@ export default function FaqHero() {
           <h2>Cost and Pricing</h2>
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
               aria-controls="panel2-content"
               id="panel2-header"
             >
@@ -202,7 +195,7 @@ export default function FaqHero() {
           <h2>Practices FAQs</h2>
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
               aria-controls="panel2-content"
               id="panel2-header"
             >
@@ -218,7 +211,7 @@ export default function FaqHero() {
           </Accordion>
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
               aria-controls="panel2-content"
               id="panel2-header"
             >
@@ -239,7 +232,7 @@ export default function FaqHero() {
           <h2>Investment and Future</h2>
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
               aria-controls="panel2-content"
               id="panel2-header"
             >
@@ -254,7 +247,7 @@ export default function FaqHero() {
           </Accordion>
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<ExpandMoreIcon sx={{ color: '#fff' }} />}
               aria-controls="panel2-content"
               id="panel2-header"
             >

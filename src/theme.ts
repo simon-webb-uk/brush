@@ -10,20 +10,43 @@ export const siteFont = Gabarito({
 
 // Create a theme instance.
 const theme = createTheme({
-  cssVariables: true,
+  cssVariables: { cssVarPrefix: 'template' },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        html: {
+          fontSize: '20px', // now 1rem = 20px; 1.6rem ≈ 32px
+        },
+      },
+    },
+  },
   palette: {
     primary: {
-      main: '#F26D24',
+      main: '#fff',
+      contrastText: '#fff',
     },
     secondary: {
-      main: '#202125',
+      main: '#666',
     },
     error: {
       main: red.A400,
     },
+    background: {
+      default: '#F26D24', // 👈 Site background color
+      paper: '#F26D24', // 👈 Background for MUI Paper components
+    },
+    text: {
+      primary: '#fff', // 👈 Default font colour
+      secondary: '#ffffff99', // 👈 Optional: subtler text (used in MUI Typography color="text.secondary")
+    },
   },
+
   typography: {
     fontFamily: siteFont.style.fontFamily,
+
+    body2: {
+      color: '#ffffffcc',
+    },
   },
 });
 
