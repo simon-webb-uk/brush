@@ -1,5 +1,5 @@
-import { Container, Typography, Box } from '@mui/material';
-import Link from 'next/link';
+import * as React from 'react';
+import { Container, Typography, Link, Box } from '@mui/material';
 
 export default function Terms() {
   return (
@@ -9,7 +9,7 @@ export default function Terms() {
         appointments with our Partners (dental practices). We’re a booking
         service only (not medical providers) designed to make dental care
         accessible. By using Brush, you agree to these Terms. Questions? Email{' '}
-        <Link href="mailto:terms@trybrush.com">terms@trybrush.com</Link>.
+        <Link href="mailto:terms@trybrush.com">terms@trybrush.com</Link>
       </Typography>
 
       {/* 1. Introduction */}
@@ -19,10 +19,10 @@ export default function Terms() {
       <Typography variant="body1" sx={{ mb: 3 }}>
         Brush Labs Limited ("we," "us," or "Brush"), registered in England,
         operates the Platform to connect patients with dental Partners for
-        Private and NHS appointments. Our mission is to simplify dental care
-        access with a national booking system. We facilitate bookings but don’t
-        provide dental care. These Terms apply to all users during the pilot
-        phase and future expansions. Check{' '}
+        appointments. Our mission is to simplify dental care access with a
+        national booking system. We facilitate bookings but don’t provide dental
+        care. These Terms apply to all users during the pilot phase and future
+        expansions. Check{' '}
         <Link href="https://trybrush.com" target="_blank" rel="noopener">
           trybrush.com
         </Link>{' '}
@@ -33,30 +33,26 @@ export default function Terms() {
       <Typography variant="h5" component="h2" gutterBottom>
         2. Eligibility and Accounts
       </Typography>
-      <Typography variant="body1" sx={{ mb: 3 }}>
+      <Typography variant="body1" sx={{ mb: 2 }}>
         You must be 18+ (or have guardian consent for minors) to use the
         Platform. Provide accurate details, including health info (e.g.,
-        allergies) relevant to treatment.
-      </Typography>
-      <Typography variant="body1" sx={{ mb: 3 }}>
-        No account creation is required for bookings during the pilot. Use our
-        instant search. Keep any provided contact info secure; you’re
-        responsible for activity.
+        allergies) relevant to treatment. No account creation is required for
+        bookings during the pilot. Use our instant search. Keep any provided
+        contact info secure; you’re responsible for activity.
       </Typography>
 
       {/* 3. Bookings and Payments */}
       <Typography variant="h5" component="h2" gutterBottom>
         3. Bookings and Payments
       </Typography>
-      <Typography variant="body1" sx={{ mb: 3 }}>
+      <Typography variant="body1" sx={{ mb: 2 }}>
         Search and book emergency, general, check-up or cosmetic appointments
         instantly via the Platform. Available in the pilot areas (e.g.,
         Gloucestershire and Surrey) with no patient fees.
       </Typography>
       <Typography variant="body1" sx={{ mb: 3 }}>
         Payments are handled directly by Partners or via the Platform on their
-        behalf. Taxes are managed by Partners. For NHS bookings, confirm
-        eligibility with the Partner at booking.
+        behalf. Taxes are managed by Partners.
       </Typography>
 
       {/* 4. Cancellations and Refunds */}
@@ -90,8 +86,8 @@ export default function Terms() {
         5. Partner Services and Liabilities
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        Partners provide dental care – disclose health conditions (e.g., gum
-        disease) to them pre-booking.{' '}
+        Partners provide dental care, so please disclose health conditions
+        (e.g., gum disease) to them when booking.{' '}
         <em>
           It’s your responsibility to inform the Partner of any medical
           conditions that might affect treatment. If undisclosed, neither Brush
@@ -119,7 +115,7 @@ export default function Terms() {
         7. Data and Privacy
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        At Brush, we prioritize your privacy, especially given the sensitive
+        At Brush, we prioritise your privacy, especially given the sensitive
         nature of dental health data. This section outlines what data we
         collect, how we use it, who we share it with, and your rights under UK
         and EU law. For full details, refer to our{' '}
@@ -180,23 +176,11 @@ export default function Terms() {
             urgent needs to available slots).
           </Typography>
         </li>
-        <li>
-          <Typography variant="body1">
-            Comply with legal obligations, such as NHS eligibility checks or
-            health data security requirements.
-          </Typography>
-        </li>
       </Box>
       <Typography variant="body1" sx={{ mb: 2 }}>
         <strong>Legal Basis:</strong>
       </Typography>
-      <Box component="ul" sx={{ pl: 3, mb: 2 }}>
-        <li>
-          <Typography variant="body1">
-            Consent (for health data, which you can withdraw via the Privacy
-            Policy settings).
-          </Typography>
-        </li>
+      <Box component="ul" sx={{ pl: 3, mb: 3 }}>
         <li>
           <Typography variant="body1">
             Contractual necessity (to fulfill your booking request).
@@ -214,7 +198,7 @@ export default function Terms() {
       <Typography variant="h6" component="h3" gutterBottom>
         7.3 Data Sharing and Third Parties
       </Typography>
-      <Box component="ul" sx={{ pl: 3, mb: 2 }}>
+      <Box component="ul" sx={{ pl: 3, mb: 3 }}>
         <li>
           <Typography variant="body1">
             <strong>Partners:</strong> We share your personal and health data
@@ -227,15 +211,15 @@ export default function Terms() {
           <Typography variant="body1">
             <strong>Third-Party Services:</strong> Data may be shared with
             Dentally PMS (practice management software) for appointment
-            coordination and secure storage. We also use payment processors (if
-            applicable) with strict data-sharing agreements.
+            coordination and secure storage. We also use payment processors with
+            strict data-sharing agreements.
           </Typography>
         </li>
         <li>
           <Typography variant="body1">
-            <strong>No Data Sales:</strong> We do not sell your data to third
-            parties. It’s used solely to optimise access and support our mission
-            to bridge the supply-demand gap in dental care.
+            <strong>Data Sales:</strong> We may share your data with relevant
+            third parties to optimise patient access and support our mission to
+            bridge the supply and demand gap in dental care.
           </Typography>
         </li>
         <li>
@@ -251,26 +235,21 @@ export default function Terms() {
       <Typography variant="h6" component="h3" gutterBottom>
         7.4 Data Security and Retention
       </Typography>
-      <Box component="ul" sx={{ pl: 3, mb: 2 }}>
-        <li>
-          <Typography variant="body1" sx={{ mb: 2 }}>
-            <strong>Security Measures:</strong> Data is encrypted using
-            industry-standard protocols (e.g., TLS) and stored on secure servers
-            compliant with UK health data regulations (e.g., Data Protection Act
-            2018, NHS Digital standards). Access is restricted to authorized
-            personnel.
-          </Typography>
-        </li>
-        <li>
-          <Typography variant="body1" sx={{ mb: 3 }}>
-            <strong>Retention Period:</strong> Personal data is kept for as long
-            as needed to fulfill bookings (typically 12 months post-appointment)
-            or as required by law (e.g., 6 years for NHS audits). Health data is
-            retained only with consent and deleted upon withdrawal unless the
-            Partner requires it for treatment records.
-          </Typography>
-        </li>
-      </Box>
+      <Typography variant="body1" sx={{ mb: 2 }}>
+        <strong>Security Measures:</strong> Data is encrypted using
+        industry-standard protocols (e.g., TLS) and stored on secure servers
+        compliant with UK health data regulations (e.g., Data Protection Act
+        2018, NHS Digital standards). Access is restricted to authorized
+        personnel.
+      </Typography>
+      <Typography variant="body1" sx={{ mb: 3 }}>
+        <strong>Retention Period:</strong> Personal data is kept for as long as
+        needed to fulfill bookings (typically 12 months post-appointment) or as
+        required by law (e.g., 6 years for NHS audits). Health data is retained
+        only with consent and deleted upon withdrawal unless the Partner
+        requires it for treatment records.
+      </Typography>
+
       {/* 7.5 */}
       <Typography variant="h6" component="h3" gutterBottom>
         7.5 Your Rights Under GDPR
@@ -354,7 +333,7 @@ export default function Terms() {
           ico.org.uk
         </Link>
         . For pilot specific queries, reach out to{' '}
-        <Link href="mailto:support@trybrush.com">support@trybrush.com</Link>.
+        <Link href="mailto:contact@trybrush.com">contact@trybrush.com</Link>.
       </Typography>
 
       {/* 8. Governing Law and Disputes */}
@@ -363,9 +342,9 @@ export default function Terms() {
       </Typography>
       <Typography variant="body1" sx={{ mb: 3 }}>
         Governed by English law; English courts have jurisdiction. Resolve
-        issues with Partners first. We assist but can’t guarantee outcomes.
-        Contact{' '}
-        <Link href="mailto:support@trybrush.com">support@trybrush.com</Link> for
+        issues with Partners first. We’re able to assist, but can’t guarantee
+        outcomes. Email{' '}
+        <Link href="mailto:contact@trybrush.com">contact@trybrush.com</Link> for
         help.
       </Typography>
 
@@ -388,9 +367,8 @@ export default function Terms() {
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
         The Platform aims to address the 13% of adults unable to book dental
-        appointments and enhance industry revenue (5–10%, £450M+). However,
+        appointments and enhance industry revenue (5–10%, £450M+). However,{' '}
         <em>
-          {' '}
           "projections, intentions, and estimates involve risks and
           uncertainties. Actual performance may differ materially."
         </em>

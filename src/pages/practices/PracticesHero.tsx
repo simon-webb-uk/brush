@@ -65,34 +65,12 @@ export default function PracticesHero() {
               width: { sm: '100%', md: '80%' },
             }}
           >
-            NHS funding cuts and last minute cancellations mean lost income and
+            NHS funding cuts and last-minute cancellations mean lost income and
             empty slots. Brush reduces administrative burdens by streamlining
             appointment management and helping independent network practices
             maximise capacity. Join our growing network, starting with
             Gloucestershire and Surrey.
           </Typography>
-          <Typography
-            sx={{
-              textAlign: 'center',
-              color: 'text.secondary',
-              width: { sm: '100%', md: '80%' },
-            }}
-          ></Typography>
-          <List>
-            <ListItem>
-              Real time rebooking: Fill cancellations in seconds, boosting
-              revenue.
-            </ListItem>
-            <ListItem>Marketplace tools: Compare prices</ListItem>
-            <ListItem>
-              AI Insights: Optimise schedules and early diagnosis for conditions
-              like gum disease.
-            </ListItem>
-            <ListItem>
-              Subscription of £79/month per network + £39/fee for each new
-              confirmed booking.
-            </ListItem>
-          </List>
           <Typography
             sx={{
               fontWeight: 'bold',
@@ -103,7 +81,7 @@ export default function PracticesHero() {
             }}
           >
             Join our network and help us transform dental care. Email{' '}
-            <a href="mailto:network@trybrush.com">network@trybrush.com</a>
+            <a href="mailto:join@trybrush.com">join@trybrush.com</a>
           </Typography>
         </Stack>
       </Container>

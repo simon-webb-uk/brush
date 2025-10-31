@@ -42,20 +42,7 @@ export default function ContactHero() {
               fontSize: '2rem',
             }}
           >
-            CONTACT&nbsp;
-            <Typography
-              component="span"
-              variant="h1"
-              sx={theme => ({
-                fontSize: 'inherit',
-                color: 'primary.main',
-                ...theme.applyStyles('dark', {
-                  color: 'primary.light',
-                }),
-              })}
-            >
-              US
-            </Typography>
+            Contact Us
           </Typography>
           <Typography
             sx={{
@@ -68,13 +55,14 @@ export default function ContactHero() {
           </Typography>
           <Typography
             sx={{
+              fontWeight: 'bold',
+              fontSize: '1rem',
               textAlign: 'center',
               color: 'text.secondary',
               width: { sm: '100%', md: '80%' },
             }}
           >
-            Email: support@trybrush.com Phone: 01242 123 456 Address: 123 High
-            Street, Cheltenham, GL50 1AA
+            <a href="matilto:support@trybrush.com">support@trybrush.com</a>
           </Typography>
         </Stack>
       </Container>

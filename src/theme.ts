@@ -37,7 +37,7 @@ const theme = createTheme({
     },
     text: {
       primary: '#fff', // 👈 Default font colour
-      secondary: '#ffffff99', // 👈 Optional: subtler text (used in MUI Typography color="text.secondary")
+      secondary: 'rgba(255, 255, 255, 0.75)', // 👈 Optional: subtler text (used in MUI Typography color="text.secondary")
     },
   },
 
@@ -45,7 +45,7 @@ const theme = createTheme({
     fontFamily: siteFont.style.fontFamily,
 
     body2: {
-      color: '#ffffffcc',
+      color: 'rgba(255, 255, 255, 0.75)',
     },
   },
 });

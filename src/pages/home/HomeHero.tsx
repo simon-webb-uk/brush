@@ -1,18 +1,9 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import InputLabel from '@mui/material/InputLabel';
-import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import visuallyHidden from '@mui/utils/visuallyHidden';
-import { styled } from '@mui/material/styles';
-import {
-  ButtonOverrideStyle,
-  ContentButtonOverrideStyle,
-} from '../../shared-theme/overrides';
+import { ContentButtonOverrideStyle } from '../../shared-theme/overrides';
 
 export default function HomeHero() {
   return (
@@ -52,13 +43,24 @@ export default function HomeHero() {
           <Typography
             sx={{
               textAlign: 'center',
-              color: 'text.secondary',
+              color: 'text.primary',
               width: { sm: '100%', md: '80%' },
               fontWeight: 500,
             }}
           >
-            Making it simple for families to access dental care with a national
-            booking system for Private and NHS patients
+            Making it easy to access dental care, by bringing local dentists
+            together.
+          </Typography>
+          <Typography
+            sx={{
+              textAlign: 'center',
+              color: 'text.primary',
+              width: { sm: '100%', md: '80%' },
+              fontWeight: 500,
+            }}
+          >
+            Brush scrubs away the stress of ringing around for a dentist. See
+            all the free slots near you in a flash.
           </Typography>
           <Stack
             direction={{ xs: 'column', sm: 'column' }}
@@ -73,12 +75,9 @@ export default function HomeHero() {
               href="http://trybrush.redfiredigital.uk"
               sx={ContentButtonOverrideStyle}
             >
-              Book in Seconds – No Calls Needed
+              Search Here
             </Button>
           </Stack>
-          <Typography color="text.secondary" sx={{ textAlign: 'center' }}>
-            Endorsed by Peter and Emily Andre, champions of family health.
-          </Typography>
         </Stack>
       </Container>
     </Box>

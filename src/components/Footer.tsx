@@ -45,7 +45,7 @@ export default function Footer() {
             minWidth: { xs: '100%', sm: '60%' },
           }}
         >
-          <Box sx={{ width: { xs: '100%', sm: '60%' } }}>TryBrush © 2025</Box>
+          <Box sx={{ width: { xs: '100%', sm: '60%' } }}>Brush ® 2025</Box>
         </Box>
         <Box
           sx={{
@@ -54,7 +54,7 @@ export default function Footer() {
             gap: 1,
           }}
         >
-          <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
+          <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
             Product
           </Typography>
           <Link color="primary.contrastText" variant="body2" href="/faq">
@@ -70,7 +70,7 @@ export default function Footer() {
         >
           <Typography
             variant="body2"
-            sx={{ pt: { xs: 4, sm: 0 }, fontWeight: 'medium' }}
+            sx={{ pt: { xs: 4, sm: 0 }, fontWeight: 'bold' }}
           >
             Company
           </Typography>
@@ -88,7 +88,7 @@ export default function Footer() {
         >
           <Typography
             variant="body2"
-            sx={{ pt: { xs: 4, sm: 0 }, fontWeight: 'medium' }}
+            sx={{ pt: { xs: 4, sm: 0 }, fontWeight: 'bold' }}
           >
             Legal
           </Typography>

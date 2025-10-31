@@ -15,7 +15,7 @@ export default function AboutPage(props: { disableCustomTheme?: boolean }) {
 
       <div>
         <AboutHero />
-        <OurPeople />
+        {/* <OurPeople /> */}
         {/* <Features />
         <Divider />
         <Testimonials />

@@ -29,45 +29,48 @@ export default function AboutHero() {
             variant="h1"
             sx={{
               display: 'flex',
-              flexDirection: { xs: 'column', sm: 'row' },
+              flexDirection: { xs: 'column', sm: 'column' },
               alignItems: 'center',
-              fontSize: 'clamp(3rem, 10vw, 3.5rem)',
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+              fontSize: '2rem',
             }}
           >
-            ABOUT&nbsp;
-            <Typography
-              component="span"
-              variant="h1"
-              sx={theme => ({
-                fontSize: 'inherit',
-                color: 'primary.main',
-                ...theme.applyStyles('dark', {
-                  color: 'primary.light',
-                }),
-              })}
-            >
-              US
-            </Typography>
+            Our Story So Far
           </Typography>
           <Typography
             sx={{
-              fontWeight: 'bold',
               textAlign: 'center',
               color: 'text.secondary',
               width: { sm: '100%', md: '80%' },
             }}
           >
-            Brush was born from a frustrating yet relatable experience. When
-            nine-year-old Brontë, the niece of one of our founders, suffered a
-            toothache during a visit to Sussex, her aunt and uncle struggled to
-            find a dentist with an available appointment. Hours of phone calls
-            to local practices yielded no results, until a cancellation at a
-            surgery further afield allowed Brontë to be seen and smile again.
+            Brush was born from a painful experience. When the nine-year-old
+            niece of one of our founders had a toothache while staying with
+            them, her aunt and uncle couldn't find a dentist with an available
+            appointment.
+          </Typography>
+          <Typography
+            sx={{
+              textAlign: 'center',
+              color: 'text.secondary',
+              width: { sm: '100%', md: '80%' },
+            }}
+          >
+            After hours spent ringing round local dentists, it was thanks to a
+            cancellation further afield that she could win back her smile.
+          </Typography>
+          <Typography
+            sx={{
+              textAlign: 'center',
+              color: 'text.secondary',
+              width: { sm: '100%', md: '80%' },
+            }}
+          >
             This ordeal highlighted a gap in the UK’s dental care system.
             Inspired by this challenge, Brush was created to make dental care
             quick, fair, and accessible for everyone.
           </Typography>
-          <h3>Mission</h3>
+          <Typography variant="h3">Mission</Typography>
           <Typography
             sx={{
               textAlign: 'center',
@@ -81,7 +84,7 @@ export default function AboutHero() {
             booking platform that connects patients with available dental
             appointments instantly.
           </Typography>
-          <h3>Vision</h3>
+          <Typography variant="h3">Vision</Typography>
           <Typography
             sx={{
               textAlign: 'center',

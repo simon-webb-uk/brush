@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
+import { styled, alpha, SxProps } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -30,6 +30,15 @@ export default function AppAppBar() {
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
+  };
+
+  const MenuTextItemOverride: SxProps = {
+    color: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'transparent',
+    '&:hover': {
+      color: 'rgba(0, 0, 0, 0.75)',
+      backgroundColor: 'transparent',
+    },
   };
 
   return (
@@ -65,6 +74,7 @@ export default function AppAppBar() {
                 color="info"
                 size="small"
                 href="http://trybrush.redfiredigital.uk"
+                sx={MenuTextItemOverride}
               >
                 Find Dentist
               </Button>
@@ -73,6 +83,7 @@ export default function AppAppBar() {
                 color="info"
                 size="small"
                 href="/practices"
+                sx={MenuTextItemOverride}
               >
                 For Practices
               </Button>
@@ -80,7 +91,7 @@ export default function AppAppBar() {
                 variant="text"
                 color="info"
                 size="small"
-                sx={{ minWidth: 0 }}
+                sx={MenuTextItemOverride}
                 href="/about"
               >
                 About Us
@@ -89,7 +100,7 @@ export default function AppAppBar() {
                 variant="text"
                 color="info"
                 size="small"
-                sx={{ minWidth: 0 }}
+                sx={MenuTextItemOverride}
                 href="/contact"
               >
                 Contact
@@ -98,7 +109,7 @@ export default function AppAppBar() {
                 variant="text"
                 color="info"
                 size="small"
-                sx={{ minWidth: 0 }}
+                sx={MenuTextItemOverride}
                 href="/faq"
               >
                 FAQs
@@ -119,7 +130,7 @@ export default function AppAppBar() {
               href="http://trybrush.redfiredigital.uk"
               sx={ButtonOverrideStyle}
             >
-              Join Now
+              Book Now
             </Button>
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' }, gap: 1 }}>

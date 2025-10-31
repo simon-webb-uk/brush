@@ -44,20 +44,7 @@ export default function FaqHero() {
               fontSize: '2rem',
             }}
           >
-            FA
-            <Typography
-              component="span"
-              variant="h1"
-              sx={theme => ({
-                fontSize: 'inherit',
-                color: 'primary.main',
-                ...theme.applyStyles('dark', {
-                  color: 'primary.light',
-                }),
-              })}
-            >
-              Qs
-            </Typography>
+            FAQs
           </Typography>
         </Stack>
         <Container
@@ -93,10 +80,9 @@ export default function FaqHero() {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Inspired by a nine-year-old’s toothache ordeal in Sussex, Brush
+                Inspired by a nine year old’s toothache ordeal in Sussex, Brush
                 was born to eliminate the stress of endless phone calls and long
-                waits, making dental care quick, fair, and accessible for
-                everyone.
+                waits, making dental care quick, fair, and accessible.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -132,8 +118,7 @@ export default function FaqHero() {
             <AccordionDetails>
               <Typography>
                 Book emergency, general/check-up, or cosmetic appointments. The
-                platform rebooks cancelled slots in real-time to minimize wait
-                times.
+                platform rebooks cancelled slots in real-time to minimize waits.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -236,7 +221,7 @@ export default function FaqHero() {
               aria-controls="panel2-content"
               id="panel2-header"
             >
-              <Typography>What’s the investment opportunity?</Typography>
+              <Typography>What's the investment opportunity?</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -256,8 +241,8 @@ export default function FaqHero() {
             <AccordionDetails>
               <Typography>
                 Email
-                <a href="mailto:join@trybrush.com">join@trybrush.com</a> for
-                further details or visit trybrush.com
+                <a href="mailto:contact@trybrush.com">contact@trybrush.com</a>
+                for further details or visit trybrush.com
               </Typography>
             </AccordionDetails>
           </Accordion>
